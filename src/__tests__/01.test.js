@@ -12,7 +12,7 @@ describe("Exercise 01", () => {
   });
 
   test("sets the document title", () => {
-    renderHook(() => useDocumentTitle());
+    renderHook(() => useDocumentTitle("Welcome to the home page!"));
     act(() => {
       expect(document.title).toBe("Welcome to the home page!");
     });
